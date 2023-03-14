@@ -3,10 +3,10 @@ import Item from "./Item";
 
 function ShoppingList({ items }) {
 
-  const [selected, setSelectedCategory] = useState("All");
+  const [selected, setSelected] = useState("All");
 
   function handleChange(event) {
-    setSelectedCategory(event.target.value)
+    setSelected(event.target.value)
   };
  
   const itemsToDisplay = items.filter((item) => {
